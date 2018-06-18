@@ -146,6 +146,7 @@ header .mobile {
 
   .info {
     display: flex;
+    align-items: center;
     background-color: lightgrey;
     padding: 1rem;
   }
@@ -158,8 +159,25 @@ header .mobile {
   .thumbnail img {
     width: 100%;
     height: auto;
+
   }
 
   .thumbnail-text {
     width: 65%;
+    padding: 1.5rem;
+    line-height: 1.8rem;
   }
+
+  .thumbnail-text h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+
+  .link {
+    padding-top: 0.7rem;
+    }
+
+    .link a {
+      color: #3385ff;
+    }
