@@ -329,7 +329,10 @@ background-color:  #fee9e6;
 
     @media only screen and (max-width: 500px) {
 
-      .main-information .left-information {
+      .events .left-information,
+      .thesis .main-information .right-information,
+      .thesis .main-information .left-information h3,
+      .thesis .main-information .left-information p{
         display: none;
       }
 
@@ -347,9 +350,41 @@ background-color:  #fee9e6;
 
       /*.right-information .thumbnail img {
         width: 100%;
-        height: auto;*/
+        height: auto;
+
+      }*/
+
+    }
+
+    @media only screen and (max-width: 500px) {
+      .course-items {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
 
       }
+
+      .courses h2 {
+        background-color: white;
+      }
+
+      .course-items .course-item {
+        width: 100%;
+        margin: 0 auto;
+        }
+
+      .course-items .course-item .course-thumbnail,
+      .course-items .course-item p{
+        display: none
+      }
+
+      .course-item h3 {
+        display: block;
+        background-color: lightgrey;
+        margin: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+
 
     }
 
@@ -426,33 +461,7 @@ background-color:  #fee9e6;
       color: #4d4d4d;
     }
 
-    @media only screen and (max-width: 500px) {
-      .course-items {
-        display: flex;
-        flex-flow: column;
-        width: 100%;
 
-      }
-
-      .course-items .course-item {
-        width: 100%;
-        margin: 0 auto;
-        }
-
-      .course-items .course-item .course-thumbnail,
-      .course-items .course-item p{
-        display: none
-      }
-
-      .course-item h3 {
-        display: block;
-        background-color: lightgrey;
-        margin: 0.5rem 1rem;
-        border-radius: 5px;
-      }
-
-
-    }
 
 
     /* FOOTER */
