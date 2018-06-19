@@ -74,6 +74,71 @@ header .mobile {
   display: none;
 }
 
+
+/* HEADER MOBILE STYLES */
+
+@media only screen and (max-width: 500px) {
+
+header .desktop,
+header .logo {
+  display: none;
+}
+
+/*
+header .content {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}*/
+
+
+header .mobile {
+  display: block;
+  width: 100%;
+}
+
+/*
+header .mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  }
+*/
+
+.mobile ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+}
+  nav a {
+    padding: 0rem 2rem;
+  }
+
+  nav a img {
+    font-size: 3rem;
+  }
+
+
+
+/*
+header .mobile {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0rem;
+  height: 64px;
+  width: 100%;
+}
+
+.mobile .mobile-nav {
+  display: flex;
+  justify-content: space-between;
+}*/
+
+}
+
 /* BANNER */
 
 .main {
