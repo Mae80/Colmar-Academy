@@ -236,7 +236,7 @@ background-color:  #fee9e6;
     background-color: #4d4d4d;
     color: white;
     border-radius: 5px;
-    
+
   }
 }
 
@@ -315,6 +315,44 @@ background-color:  #fee9e6;
       color: #3385ff;
     }
 
+    @media only screen and (max-width: 700px) {
+      .main-information {
+      display: flex;
+      flex-flow: column;
+      }
+
+      .main-information .left-information,
+      .main-information .right-information {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+
+      .main-information .left-information {
+        display: none;
+      }
+
+      .right-information .info {
+        flex-flow: column;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .right-information .thumbnail {
+        width: 100%;
+        height: 45%;
+        margin: 0 auto;
+      }
+
+      /*.right-information .thumbnail img {
+        width: 100%;
+        height: auto;*/
+
+      }
+
+    }
+
     /* COURSES SECTION */
 
     .courses {
@@ -386,6 +424,34 @@ background-color:  #fee9e6;
       font-weight: bold;
       padding-bottom: 0.5rem;
       color: #4d4d4d;
+    }
+
+    @media only screen and (max-width: 500px) {
+      .course-items {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+
+      }
+
+      .course-items .course-item {
+        width: 100%;
+        margin: 0 auto;
+        }
+
+      .course-items .course-item .course-thumbnail,
+      .course-items .course-item p{
+        display: none
+      }
+
+      .course-item h3 {
+        display: block;
+        background-color: lightgrey;
+        margin: 0.5rem 1rem;
+        border-radius: 5px;
+      }
+
+
     }
 
 
